@@ -1,0 +1,34 @@
+--extra-index-url https://download.pytorch.org/whl/cu128
+colpali-engine  # library for the colpali engine to run the image enbeddings sematic embeddings
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch  # PyTorch, an open-source machine learning library for deep learning applications
+--extra-index-url https://download.pytorch.org/whl/cu128
+torchvision  # A package for image and video processing, built on top of PyTorch, containing datasets, models, and transformations
+
+pillow  # A Python Imaging Library that provides capabilities for opening, manipulating, and saving image files
+
+pdf2image  # A tool to convert PDF files into PIL Image objects, allowing manipulation and extraction of images from PDFs
+
+transformers  # A library developed by Hugging Face that provides state-of-the-art pre-trained models for natural language processing tasks such as text classification, information extraction, and more
+
+intersystems-irispython  # Connection to InterSystems SQL vector search
+
+python-dotenv
+
+numpy
+
+flash-attn
+
+git+https://github.com/illuin-tech/colpali.git
+
+matplotlib
+
+scikit-learn
+
+rich
+
+openai
+
+qwen_vl_utils
+
+streamlit
