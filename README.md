@@ -28,10 +28,62 @@ To get started, you’ll need access to the **InterSystems Cloud SQL Trial**:
 3. Copy your **connection details** (host, port, user, password, namespace).
 4. Download the connection certificate from cloud SQL and rename connection.pem (and put in the connection folder.)
 
+Here’s a step-by-step guide to getting set up with **InterSystems IRIS Cloud SQL**, whether you're using the free trial or a paid subscription:
 
-This will guide you through entering your database credentials and automatically create a `.env-new` file with the necessary configuration. Copy this to `.env`
+### Step 1: Access the Cloud Services Portal
+
+Head over to the **InterSystems Cloud Services Portal** to begin — here you can sign up for either a **Cloud SQL trial** or a **paid subscription**, and create a deployment.([InterSystems Documentation][1])
+
+### Step 2: Navigate to the Services Page
+
+Once inside the portal, go to the **Services** section (usually under the main menu). There, you'll find a card for **InterSystems IRIS Cloud SQL** where you can click **Subscribe** to view pricing and subscription options.([InterSystems Documentation][2])
+
+### Step 3: Choose Trial or Subscription
+
+* **Trial access**: Often accompanied by introductory credits (e.g., the site mentions “\$300 in FREE credits”).([InterSystems Corporation][3])
+* **Paid Subscription**: If you're ready for production-grade use, the portal lets you subscribe directly or via your cloud provider (e.g., AWS Marketplace). Billing is handled through InterSystems or your cloud account, depending on your selection.([InterSystems Documentation][2])
+
+### Step 4: Launch a New Deployment
+
+After subscribing, head to the **Deployments** page. Click **Create New Deployment** and follow the prompts to configure details such as size, region, service level (e.g., Development, Test, Live), and any additional options like external connectivity.([InterSystems Documentation][2])
+
+### Step 5: Manage and Configure Your Deployment
+
+Once created, you can access your deployment’s **Overview** page to:
+
+* View connection details (host, port, namespace, etc.)
+* Enable or disable external access as needed (`0.0.0.0/0` or other subnet)
+* Adjust security options like IP restrictions or TLS settings([InterSystems Documentation][1], [InterSystems Documentation][4])
+* Download the SQL pem certificate and rename it connection.pem
 
 ---
+
+### Optional: Video Walkthrough
+
+If you'd prefer a quick visual tour, there's a helpful video demonstration titled *“Working with InterSystems IRIS Cloud SQL”* that walks through deployment and connection processes.([InterSystems Developer Community][6])
+
+---
+
+### Summary Table
+
+| Step | Action                                                                                |
+| ---- | ------------------------------------------------------------------------------------- |
+| 1️⃣  | Log in to **InterSystems Cloud Services Portal**                                      |
+| 2️⃣  | Navigate to **Services** → choose **Cloud SQL** → **Subscribe**                       |
+| 3️⃣  | Select **Trial** (if available) or **Paid Subscription**                              |
+| 4️⃣  | Under **Deployments**, click **Create New Deployment**                                |
+| 5️⃣  | Configure your deployment and then access its **Overview**                            |
+| 6️⃣  | Download driver → gather connection info → connect securely (e.g., via Python DB-API) |
+
+---
+
+[1]: https://docs.intersystems.com/services/csp/docbook/DocBook.UI.Page.cls?KEY=PAGE_iriscloudsql&utm_source=chatgpt.com "Welcome to InterSystems IRIS Cloud SQL"
+[2]: https://docs.intersystems.com/services/csp/docbook/DocBook.UI.Page.cls?KEY=ISCSP_reference&utm_source=chatgpt.com "Cloud Services Portal Reference Information | InterSystems Cloud ..."
+[3]: https://www.intersystems.com/products/intersystems-iris-cloud-services/cloud-sql/?utm_source=chatgpt.com "InterSystems IRIS Cloud SQL"
+[4]: https://docs.intersystems.com/components/csp/docbook/DocBook.UI.Page.cls?KEY=GDRIVE_cloudsql&utm_source=chatgpt.com "Connecting Your Application to InterSystems IRIS Cloud SQL"
+[5]: https://community.intersystems.com/post/cloud-sql?utm_source=chatgpt.com "Cloud SQL - InterSystems Developer Community"
+[6]: https://community.intersystems.com/post/video-working-intersystems-iris-cloud-sql?utm_source=chatgpt.com "[Video] Working with InterSystems IRIS Cloud SQL"
+
 
 ## 2. Setting up Project
 
