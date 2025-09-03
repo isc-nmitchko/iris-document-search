@@ -21,7 +21,10 @@ from irisutils import (
 )
 import argparse
 
-irissettings = get_env_variables()
+try:
+    irissettings = get_env_variables()
+except:
+    irissettings = []
 args = None
 
 
