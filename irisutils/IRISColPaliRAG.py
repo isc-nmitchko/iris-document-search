@@ -248,8 +248,8 @@ class IRISColPaliRAG:
             stream = client.chat.completions.create(
                 model=model,  # Use your local model name
                 messages=messages,
-                max_tokens=2048,
-                temperature=0.7,
+                # max_tokens=2048,
+                # temperature=0.7,
                 stream=True,  # Enable streaming
             )
 
@@ -320,8 +320,8 @@ class IRISColPaliRAG:
             response = client.chat.completions.create(
                 model=model,  # Use your local model name
                 messages=messages,
-                max_tokens=2048,
-                temperature=0.7,
+                # max_tokens=2048,
+                # temperature=0.7,
             )
 
             return response.choices[0].message.content
