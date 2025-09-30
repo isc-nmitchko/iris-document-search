@@ -260,10 +260,10 @@ def main():
 
     args = parser.parse_args()
 
-    iris_conn = get_iris_connection_settings(irissettings)
+
     if args.setup:
         setup()
-
+    iris_conn = get_iris_connection_settings(irissettings)
     with IRISDocCollection(
         iris_connection_params=iris_conn,
         model_name=irissettings["MODEL_SLUG"],
