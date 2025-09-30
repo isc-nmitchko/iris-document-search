@@ -17,7 +17,7 @@ python-dotenv
 
 numpy
 
-flash-attn
+flash-attn --global-option="--no-build-isolation"
 
 git+https://github.com/illuin-tech/colpali.git
 
